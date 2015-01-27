@@ -39,7 +39,7 @@ Enjoy ! (on localhost:3000)
 Credits
 -------
 
-Author : [Robin Chalas](http://www.chalasdev.fr/) 2015
+Author : [Robin Chalas](http://www.chalasdev.fr/)
 
 License
 -------
