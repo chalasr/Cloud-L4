@@ -1,4 +1,4 @@
-Portfolio App - Made with Symfony 2.3
+Cloud App - Made with Laravel 4
 ================
 
 This application was created by Robin CHALAS - FullStack Web Developer -  http://www.chalasdev.fr/
