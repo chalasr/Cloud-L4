@@ -18,21 +18,21 @@ This application requires:
 Getting Started
 ---------------
 
-- Clone this repository
+  - Clone this repository
 
-``` git clone https://github.com/chalasr/Symfony2_Portfolio.git ```
+  ``` git clone https://github.com/chalasr/Symfony2_Portfolio.git ```
 
-- Install vendor using composer
+  - Install vendor using composer
 
-``` composer install ```
+  ``` composer install ```
 
-- Create database
+  - Create database
 
-``` create db named 'cloudwac' on phpMyAdmin and import file 'cloudwac.sql' file ```
+  ``` create db named 'cloudwac' on phpMyAdmin and import file 'cloudwac.sql' file ```
 
-- Start server
+  - Start server
 
-``` php artisan serve --port=3000 ```
+  ``` php artisan serve --port=3000 ```
 
 Enjoy ! (on localhost:3000)
 
