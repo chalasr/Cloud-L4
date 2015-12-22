@@ -85,75 +85,6 @@ h1, .bleu  {
     padding-top: 10px;
 }
 
-.nav {
-    list-style: none;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-    height:50px;
-    color: rgba(255, 255, 255, 0.75);
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.nav li{
-    float: left;
-    padding:0 26px;
-    height:45px;
-    margin:0px;
-    line-height: 45px;
-    cursor: pointer;
-    text-align: center;
-    border-right: solid 1px rgba(255,255,255,0.1);
-    border-left: solid 1px rgba(0,0,0,0.4);
-}
-
-.nav-admin li{
-    padding:0 22px;
-    font-size:12px;
-}
-
-.nav li a{
-    background-color: inherit;
-    color:inherit;
-}
-
-.nav li a:hover{
-    background-color: inherit;
-    color:inherit;
-}
-
-
-.nav li:hover, .nav li:active, .active{
-    background-image: -moz-linear-gradient(top, #171717, #171717);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#171717), to(#171717));
-    background-image: -webkit-linear-gradient(top, #171717, #171717);
-    background-image: -o-linear-gradient(top, #171717, #171717);
-    background-image: linear-gradient(to bottom, #171717, #171717);
-    background-repeat: repeat-x;
-    color:white;
-    margin: 0;
-}
-
-.sub-menu{
-    background-color: #363636;
-    background-image: -moz-linear-gradient(top, #2f2f2f, #222222);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#2f2f2f), to(#222222));
-    background-image: -webkit-linear-gradient(top, #2f2f2f, #222222);
-    background-image: -o-linear-gradient(top, #2f2f2f, #222222);
-    background-image: linear-gradient(to bottom, #2f2f2f, #222222);
-    background-repeat: repeat-x;
-    width:100%;
-    height:45px;
-    -webkit-border-radius: 6px 6px 0 0;
-    -moz-border-radius: 6px 6px 0 0;
-    border-radius: 6px 6px 0 0;
-}
 
 .searchbar{
     margin-top: -20px;
@@ -440,10 +371,6 @@ footer{
     bottom: 0 !important;
 }
 
-.pagination{
-    margin-left: 50%;
-}
-
 .onebillet{
     min-height: 200px !important;
 }
@@ -510,8 +437,7 @@ footer{
 
 .icondrop{
     color: #0088cc;
-    font-size: 1.5em !important;
-    padding-right: 5px !important;
+    font-size: 1.2em !important;
 }
 
 .iconup{
@@ -552,4 +478,8 @@ margin-top: 100px;
 
 .voir{
     margin-left: 30% !important;
+}
+
+.navbar-inverse {
+    background-image: linear-gradient(to bottom, #2c2c2c 0%, #2c2c2c 100%);
 }

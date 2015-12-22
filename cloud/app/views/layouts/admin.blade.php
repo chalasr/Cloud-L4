@@ -6,26 +6,33 @@
 </title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="http://localhost/Piscine_MVC_Cloud_Wac/cloud/public/css/images/favicon.ico" />
-    {{ HTML::style('css/bootstrap.css') }}
+    <link rel="stylesheet" href="http://cdn.chalasdev.fr/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="http://cdn.chalasdev.fr/css/bootstrap-theme.min.css" media="screen" title="no title" charset="utf-8">
     {{ HTML::style('css/style.css') }}
     {{ HTML::style('dropzone/css/dropzone.css') }}
 </head>
 <body>
-<header class="nav sub-menu menu">
-    <nav class="container">
-        <ul class="menulist list-unstyled">
-            <li class="admin"><a href="{{ URL::to('upload') }}"><i class="icondrop fa fa-dropbox"></i><b> CloudWac</b></a></li>
-            <li> <i class="iconup fa fa-th-large"></i> <a href="{{ URL::to('admin') }}">Panel</a></li>
-            <li> <i class="iconup fa fa-user"></i> <a href="{{ URL::to('admin/users') }}">Membres</a></li>
-            <li> <i class="iconup fa fa-folder-open"></i> <a href="{{ URL::to('admin/files') }}">Fichiers</a></li>
-        </ul>
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><i class="icondrop fa fa-dropbox"></i><b> CloudWac</b></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav pull-right">
+            <li> <a href="{{ URL::to('admin') }}"><i class="iconup fa fa-th-large"></i> Panel</a></li>
+            <li> <a href="{{ URL::to('admin/users') }}"><i class="iconup fa fa-user"></i> Membres</a></li>
+            <li> <a href="{{ URL::to('admin/files') }}"><i class="iconup fa fa-folder-open"></i> Fichiers</a></li>
+            <li> <a href="{{ URL::to('/users/logout') }}">Déconnexion</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
     </nav>
-        @if(Auth::check())
-            <?php $url = action('UsersController@getLogout'); ?>
-            <?php $pseudo = Auth::user()->username; ?>
-           <div><p class="login-bouton info-user"><span style="color: #FFF;">Bienvenue <?php echo $pseudo; ?></span><a class="btn btn-default btn-sm" href="<?php echo $url; ?>">Se déconnecter</a></p></div>
-        @endif
-    </header>
 
     <div id="content">
     @if(Session::has('message'))
