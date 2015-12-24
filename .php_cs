@@ -1,7 +1,7 @@
 <?php
 
 $finder = Symfony\CS\Finder\DefaultFinder::create()
-    ->in(array(__DIR__.'/src'))
+    ->in(array(__DIR__.'/app/controllers'))
 ;
 
 return Symfony\CS\Config\Config::create()

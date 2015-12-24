@@ -5,7 +5,8 @@
 	"license": "MIT",
 	"require": {
 		"laravel/framework": "4.2.*",
-		"ondrs/dropzone": "dev-master"
+		"ondrs/dropzone": "dev-master",
+		"fabpot/php-cs-fixer": "^1.11"
 	},
 	"autoload": {
 		"classmap": [
