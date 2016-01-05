@@ -482,4 +482,5 @@ margin-top: 100px;
 
 .navbar-inverse {
     background-image: linear-gradient(to bottom, #2c2c2c 0%, #2c2c2c 100%);
+    border-color: #2c2c2c;
 }
